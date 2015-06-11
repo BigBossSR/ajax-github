@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div id="copyLocation"></div>
+
+	<template id="stationTemplate">
+		<div class="station">
+			<div class="name">{{name}}</div>
+			<div class="bikes">{{bikes}}</div>
+			<div class="docks">{{docks}}</div>
+		</div>
+	</template>
+
+
+	<template id="conditionalTemplate">
+		<div class="item {{#if complete }} checked {{/if}}">
+		{{item}}
+		</div>
+	<template>
+
+	<template id="arrayTemplate">
+		{{#each items}}
+		<div class="item {{#if complete }} checked {{/if}}">
+			{{item}}
+		</div>
+		{{/each}}
+	</template>
+
+<script type="text/javascript" src="libs/jquery.js"></script>
+<script type="text/javascript" src="libs/underscore.js"></script>
+<script type="text/javascript" src="libs/handlebars-v3.0.3.js"></script>
+<script type="text/javascript" src="notes-practice.js"></script>	
+
+</body>
+</html>

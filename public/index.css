@@ -1,0 +1,155 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+a {
+	color: RGB(61, 121, 187);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+.container {
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 0px;
+	font-family: Helvetica, arial;
+	width: 980px;
+}
+
+.header {
+	background-color: RGB(245, 245, 245);
+	height: 49px;
+	border-bottom: solid 1px RGB(229, 229, 229);
+
+}
+
+.sidebar {
+	font-size: 13px;
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	padding: 0px 10px;
+}
+
+.avatar {
+	width:230px;
+	height: 230px;
+	border-radius: 15px;
+}
+
+.name {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.name h2 {
+	font-size: 20px;
+	line-height: 24px;
+}
+.personal-info {
+	border-top: 1px solid RGB(238, 238, 238);
+	padding: 15px 0px;
+	font-size: 14px;
+	line-height: 1.75em;
+}
+
+.info span {
+	padding: 2px 0px;
+	color: RGB(204, 204, 204);
+	width: 16px;
+}
+
+.social {
+	margin: 10px 0px;
+	border-bottom: 1px solid RGB(238, 238, 238);
+	border-top: 1px solid RGB(238, 238, 238);
+	padding: 15px 0px;
+	text-align: center;
+	color: RGB(51, 51, 51);
+}
+
+.social-link {
+	display: inline-block;
+	width: 32%;
+}
+
+.social-link p {
+	font-size: 11px;
+	color: RGB(126, 126, 126);
+}
+
+.social-link a:hover {
+	text-decoration: none;
+}
+
+.org-box {
+	padding-top: 15px;
+}
+
+.org {
+	height: 42px;
+	display: inline-block;
+	border-radius: 3px;
+}
+
+.repoList {
+	font-size: 14px;
+	display: inline-block;
+	width: 75%;
+	padding: 0px 10px;
+}
+
+.repo {
+	padding: 30px 0px;
+	border-bottom: 1px solid RGB(238, 238, 238);
+	color: RGB(136, 136, 136);
+	line-height: 2em;
+}
+
+.repo h2 {
+	display: inline-block;
+}
+
+.forked_from {
+	font-size: 12px;
+}
+
+.forked_from span{
+	height: 14px;
+}
+
+.description: {
+	color: RGB(102, 102, 102);
+	font-size: 14px;
+}
+
+.repo-info {
+	display: inline-block;
+	float: right;
+	font-size: 12px;
+	color: RGB(136, 136, 136);
+	font-weight: bold;
+}
+
+.repo-info div {
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.repo-info a {
+	text-decoration: none;
+	color: RGB(136, 136, 136);
+}
+
+.repo-info a:hover {
+	color: RGB(61, 121, 187);
+}
+
+

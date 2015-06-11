@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title class="title"></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="octicons.css">
+</head>
+<body>
+
+<div class="header">
+</div>
+
+<div class="container">
+	
+
+	<div class="sidebar">
+		<div id="copyLocation"></div>
+		<h3>Organizations</h3>
+		<div class="org-box">
+			<div id = "orgLocation"></div>
+		</div>
+	</div>
+
+	<div class="repoList">
+		<div id="templateLocation"></div>
+	</div>
+</div>
+<template id="sidebarTemplate">
+			<div class="avatar">
+				<a href={{avatar_url}}><img class = "avatar" src={{avatar_url}}></a>
+			</div>
+			<div class="name">
+				<h1>{{name}}</h1>
+				<h2>{{login}}</h2>
+			</div>
+			<div class="personal-info">	
+				<div class="info">
+					<!--<span class="octicon octicon-organization"></span>-->{{company}}</div>
+				<div class="info">
+					<span class="octicon octicon-location"></span>
+					{{location}}</div>
+				<div class="info">
+					<!--<span class="octicon octicon-mail"></span>-->
+					<a href="mailto:"{{email}}>{{email}}</a></div>
+				<div class="info">
+					<span class="octicon octicon-link"></span>
+					<a href={{blog}}>{{blog }}</a></div>
+				<div class="info">
+					<span class="octicon octicon-clock"></span>
+					Joined on {{created_at}}</div>
+			</div>
+			<div class="social">
+				<div class="social-link">
+					<a href={{followers_url}}>
+					<h1>{{followers}}</h1>
+					<p>Followers</a></p>
+				</div>
+				<div class="social-link">
+					<a href={{starred_url}}>
+					<h1>{{starred}}</h1>
+					<p>Starred</a></p>
+				</div>
+				<div class="social-link">
+					<a href={{following_url}}>
+					<h1>{{following}}</h1>
+					<p>Following</a></p>
+				</div>
+			</div>
+</template>
+
+<template id="orgList">
+	<div class="org">
+		<a href={{url}}><img class="org" src={{avatar_url}}></a>
+	</div>
+</template>
+
+<template id="repoTemplate">
+		<div class="repo">
+			<h2><a href={{html_url}}>{{name}}</a></h2>
+			<div class="repo-info">
+				<div class="language">{{language}}</div>
+				<div class="stars">
+					<a href={{stargazers_url}}><span class="octicon octicon-star"></span> {{stars}}</a>
+				</div>
+				<div class="forks">
+					<a href={{fork}} ><span class="octicon octicon-git-branch"></span> {{forks}}
+				</div>
+			</div>	
+			{{#if forked}}
+			<div class="forked_from">
+				<span class="octicon octicon-repo-forked"></span> 
+				forked from <a href={{forked_from}}>{{parent}}</a>
+			</div>
+			{{/if}}
+			<div class="description">{{description}}</div>
+			<div class="updated">Updated {{updated}}</div>
+
+
+		</div>
+</template>
+
+<script type="text/javascript" src="libs/jquery.js"></script>
+<script type="text/javascript" src="libs/underscore.js"></script>
+<script src="libs/moment.min.js"></script>
+<script type="text/javascript" src="libs/handlebars-v3.0.3.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
